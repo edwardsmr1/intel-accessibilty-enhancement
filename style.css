@@ -217,3 +217,45 @@ body {
     display: none;
   }
 }
+
+/* ================= BOOTSTRAP ACCESSIBILITY UTILITIES ================= */
+.btn-primary {
+  --bs-btn-bg: #005a9c;
+  --bs-btn-border-color: #005a9c;
+  --bs-btn-hover-bg: #004477;
+  --bs-btn-hover-border-color: #004477;
+  --bs-btn-active-bg: #003b66;
+  --bs-btn-active-border-color: #003b66;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #004477;
+  --bs-btn-border-color: #004477;
+  --bs-btn-hover-color: #FFFFFF;
+  --bs-btn-hover-bg: #004477;
+  --bs-btn-hover-border-color: #004477;
+  --bs-btn-active-color: #FFFFFF;
+  --bs-btn-active-bg: #003b66;
+  --bs-btn-active-border-color: #003b66;
+}
+
+:focus-visible {
+  outline: 3px solid var(--intel-accent);
+  outline-offset: 3px;
+}
+
+/* Keep directional content readable when the page switches to RTL. */
+[dir='rtl'] {
+  text-align: right;
+}
+
+[dir='rtl'] .bi-arrow-left,
+[dir='rtl'] .bi-arrow-right,
+[dir='rtl'] .arrow-icon {
+  transform: scaleX(-1);
+}
+
+[dir='rtl'] .year-badge {
+  right: auto;
+  left: 12px;
+}
