@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr" id="html-root">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
+  <link
+    id="bootstrap-css"
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,10 +20,27 @@
 </head>
 <body>
 
+  <aside class="bg-dark py-2 text-white">
+    <div class="d-flex justify-content-between align-items-center">
+      <span>
+        <i class="bi bi-globe" aria-hidden="true"></i>
+        Global Site Localization
+      </span>
+      <button
+        id="dirToggleBtn"
+        class="btn btn-outline-light btn-sm"
+        type="button"
+        aria-label="Switch page direction to right-to-left languages"
+      >
+        Switch to RTL (العربية / עברית)
+      </button>
+    </div>
+  </aside>
+
   <!-- Header / Hero Section -->
   <header class="hero">
     <div class="hero-content">
-      <img src="img/intel-header-logo.svg" alt="Intel Logo" class="intel-logo" />
+      <img src="img/intel-header-logo.svg" alt="Intel Corporation logo in the sustainability timeline header" class="intel-logo" />
       <h1>Sustainability Through the Ages</h1>
       <p class="hero-subheading">
         Explore Intel's journey through time, discovering how our commitment
@@ -26,12 +52,12 @@
 
   <!-- Timeline Cards Section -->
   <main class="timeline-container">
-    <section class="timeline-track">
+    <section class="timeline-track" aria-label="Intel Sustainability Chronological Timeline">
 
       <!-- Card 1: 1968 -->
       <article class="milestone-card">
         <div class="card-image-wrap">
-          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Vintage Circuit Board" class="card-img" />
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Vintage circuit board representing Intel's founding in 1968" class="card-img" />
           <span class="year-badge">1968</span>
         </div>
         <div class="card-body">
@@ -47,7 +73,7 @@
       <!-- Card 2: 1971 -->
       <article class="milestone-card">
         <div class="card-image-wrap">
-          <img src="https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=600&q=80" alt="Microprocessor Technology" class="card-img" />
+          <img src="https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=600&q=80" alt="Microprocessor technology representing Intel's first commercial 4004 processor in 1971" class="card-img" />
           <span class="year-badge">1971</span>
         </div>
         <div class="card-body">
@@ -63,7 +89,7 @@
       <!-- Card 3: 1978 -->
       <article class="milestone-card">
         <div class="card-image-wrap">
-          <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=600&q=80" alt="Processor Architecture" class="card-img" />
+          <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=600&q=80" alt="Processor architecture representing the 8086 x86 processor launched in 1978" class="card-img" />
           <span class="year-badge">1978</span>
         </div>
         <div class="card-body">
@@ -78,7 +104,7 @@
       <!-- Card 4: 1985 -->
       <article class="milestone-card">
         <div class="card-image-wrap">
-          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Computing Architecture" class="card-img" />
+          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Computing architecture representing Intel's 32-bit 386 processor introduced in 1985" class="card-img" />
           <span class="year-badge">1985</span>
         </div>
         <div class="card-body">
@@ -94,7 +120,7 @@
       <!-- Card 5: 2006 -->
       <article class="milestone-card">
         <div class="card-image-wrap">
-          <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=600&q=80" alt="Industrial Manufacturing Clean Energy" class="card-img" />
+          <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=600&q=80" alt="Industrial manufacturing and clean energy representing Intel's 2006 peak greenhouse gas emissions" class="card-img" />
           <span class="year-badge">2006</span>
         </div>
         <div class="card-body">
@@ -111,7 +137,7 @@
       <!-- Card 6: 2020 -->
       <article class="milestone-card">
         <div class="card-image-wrap">
-          <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=600&q=80" alt="Corporate Strategy and Stewardship" class="card-img" />
+          <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=600&q=80" alt="Corporate sustainability strategy representing Intel's RISE goals launched in 2020" class="card-img" />
           <span class="year-badge">2020</span>
         </div>
         <div class="card-body">
@@ -127,7 +153,7 @@
       <!-- Card 7: 2022 -->
       <article class="milestone-card">
         <div class="card-image-wrap">
-          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80" alt="Global Net-Zero Target" class="card-img" />
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80" alt="Global technology network representing Intel's net-zero operations target for 2040" class="card-img" />
           <span class="year-badge">2022</span>
         </div>
         <div class="card-body">
@@ -144,7 +170,7 @@
       
 <article class="milestone-card">
   <div class="card-image-wrap">
-    <img src="https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Solar Panels and Renewable Electricity" class="card-img" /> alt="Solar Panels and Wind Energy" class="card-img" />
+    <img src="https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Solar panels representing Intel's 99 percent renewable electricity use in 2023" class="card-img" />
     <span class="year-badge">2023</span>
   </div>
   <div class="card-body">
@@ -160,7 +186,7 @@
       <!-- Card 9: 2024 -->
       <article class="milestone-card">
         <div class="card-image-wrap">
-          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80" alt="Collaborative Sustainability Summit" class="card-img" />
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80" alt="People collaborating at a sustainability summit representing Intel's 2024 industry gathering" class="card-img" />
           <span class="year-badge">2024</span>
         </div>
         <div class="card-body">
@@ -174,11 +200,227 @@
       </article>
 
     </section>
+
+    <!-- Sustainability Focus Areas -->
+    <section class="container my-5" aria-labelledby="sustainability-focus-heading">
+      <h2 id="sustainability-focus-heading" class="visually-hidden">Sustainability Focus Areas</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="card h-100">
+            <div class="card-body">
+              <i class="bi bi-tree fs-1" aria-hidden="true"></i>
+              <h3 class="card-title">Climate Action</h3>
+              <p class="card-text">
+                Learn how Intel is reducing emissions and investing in renewable energy for a more sustainable future.
+              </p>
+              <a href="#" class="btn btn-primary">
+                Learn More
+                <span class="visually-hidden"> about Intel's climate action</span>
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card h-100">
+            <div class="card-body">
+              <i class="bi bi-droplet-half fs-1" aria-hidden="true"></i>
+              <h3 class="card-title">Water Stewardship</h3>
+              <p class="card-text">
+                Explore Intel's efforts to conserve water and protect this essential resource across its operations.
+              </p>
+              <a href="#" class="btn btn-primary">
+                Learn More
+                <span class="visually-hidden"> about Intel's water stewardship</span>
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card h-100">
+            <div class="card-body">
+              <i class="bi bi-recycle fs-1" aria-hidden="true"></i>
+              <h3 class="card-title">Waste Reduction</h3>
+              <p class="card-text">
+                Discover how Intel designs for circularity and reduces waste through reuse, recycling, and innovation.
+              </p>
+              <a href="#" class="btn btn-primary">
+                Learn More
+                <span class="visually-hidden"> about Intel's waste reduction</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="container my-5" aria-labelledby="newsletter-heading">
+      <h2 id="newsletter-heading">Subscribe to Intel Sustainability Updates</h2>
+      <form id="newsletterForm" novalidate>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              name="firstName"
+              autocomplete="given-name"
+              required
+              aria-required="true"
+            />
+            <div class="invalid-feedback">Please enter your first name.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              name="lastName"
+              autocomplete="family-name"
+              required
+              aria-required="true"
+            />
+            <div class="invalid-feedback">Please enter your last name.</div>
+          </div>
+          <div class="col-12">
+            <label for="email" class="form-label">Work or Personal Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              aria-required="true"
+            />
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="consent"
+                name="consent"
+                autocomplete="off"
+                required
+                aria-required="true"
+              />
+              <label for="consent" class="form-check-label">
+                I agree to receive Intel sustainability updates by email.
+              </label>
+              <div class="invalid-feedback">Please provide your consent to subscribe.</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+        </div>
+      </form>
+    </section>
   </main>
 
   <aside class="timeline-hint">
     <p>Scroll horizontally to view timeline &bull; Hover over cards to explore</p>
   </aside>
+
+  <footer class="bg-dark py-4 text-white">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <p class="mb-0">&copy; 2024 Intel Corporation. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <a href="#privacy-policy" class="link-light">Privacy Policy</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#terms-of-use" class="link-light">Terms of Use</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#contact" class="link-light">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <div
+    class="modal fade"
+    id="confirmationModal"
+    tabindex="-1"
+    aria-labelledby="modalHeading"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modalHeading">
+            <i class="bi bi-check-circle-fill text-success" aria-hidden="true"></i>
+            Subscription Confirmed
+          </h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p id="modalMessage">Thank you for subscribing to Intel sustainability updates.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const newsletterForm = document.getElementById('newsletterForm');
+    const confirmationModal = document.getElementById('confirmationModal');
+    const modalMessage = document.getElementById('modalMessage');
+    const directionButton = document.getElementById('dirToggleBtn');
+    const htmlRoot = document.getElementById('html-root');
+    const bootstrapStylesheet = document.getElementById('bootstrap-css');
+    const bootstrapCssUrl = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css';
+    const bootstrapRtlCssUrl = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css';
+    const rtlLanguagePrefixes = ['ar', 'he', 'fa', 'ur'];
+
+    function setPageDirection(direction) {
+      const isRtl = direction === 'rtl';
+      htmlRoot.dir = isRtl ? 'rtl' : 'ltr';
+      bootstrapStylesheet.href = isRtl ? bootstrapRtlCssUrl : bootstrapCssUrl;
+      directionButton.textContent = isRtl
+        ? 'Switch to LTR (English)'
+        : 'Switch to RTL (العربية / עברית)';
+      directionButton.setAttribute(
+        'aria-label',
+        isRtl ? 'Switch page direction to left-to-right languages' : 'Switch page direction to right-to-left languages'
+      );
+    }
+
+    newsletterForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      newsletterForm.classList.add('was-validated');
+
+      if (!newsletterForm.checkValidity()) {
+        return;
+      }
+
+      const submittedEmail = document.getElementById('email').value;
+      modalMessage.textContent = `Thank you for subscribing with ${submittedEmail}.`;
+      bootstrap.Modal.getOrCreateInstance(confirmationModal).show();
+    });
+
+    directionButton.addEventListener('click', () => {
+      setPageDirection(htmlRoot.dir === 'rtl' ? 'ltr' : 'rtl');
+    });
+
+    const languageObserver = new MutationObserver(() => {
+      const language = htmlRoot.lang.toLowerCase();
+      const shouldUseRtl = rtlLanguagePrefixes.some(
+        (prefix) => language === prefix || language.startsWith(`${prefix}-`)
+      );
+
+      setPageDirection(shouldUseRtl ? 'rtl' : 'ltr');
+    });
+
+    languageObserver.observe(htmlRoot, { attributes: true, attributeFilter: ['lang'] });
+  </script>
 
 </body>
 </html>
